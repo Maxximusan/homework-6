@@ -342,11 +342,18 @@
         <div>
           <h2 class="subscribe">подпишитесь на рассылку</h2>
           <form class="email-form">
-            <label>
+            <label class="email-field">
               <input type="email" name="email" placeholder="E-mail" />
             </label>
 
-            <button class="subscribe-btn" type="submit">Подписаться</button>
+            <button class="subscribe-btn" type="submit">
+              <span class="btn-content">
+                Подписаться
+                <svg class="telegram-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+            </button>
           </form>
         </div>
       </div>

@@ -461,11 +461,18 @@
         <div>
           <h2 class="subscribe">подпишитесь на рассылку</h2>
           <form class="email-form" name="email-form" autocomplete="on">
-            <label>
+            <label class="email-field">
               <input type="email" name="email" placeholder="E-mail" />
             </label>
 
-            <button class="subscribe-btn" type="submit">Подписаться</button>
+            <button class="subscribe-btn" type="submit">
+              <span class="btn-content">
+                Подписаться
+                <svg class="telegram-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+            </button>
           </form>
         </div>
       </div>
@@ -473,13 +480,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="mbtn-box">
-          <button class="modal-btn" type="button" data-modal-close>
-            <svg class="img-btn" width="18" height="18">
-              <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="img-btn" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
 
         <b class="leave-info">Оставьте свои данные, мы вам перезвоним</b>
         <form class="info-form" name="info-form" autocomplete="on">
@@ -530,7 +535,7 @@
             </span>
           </label>
 
-          <button class="leave-btn lbc" type="submit">Отправить</button>
+          <button class="leave-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
